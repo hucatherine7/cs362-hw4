@@ -5,11 +5,15 @@ import question1
 
 class Question1(unittest.TestCase):
     def test_calcVolume(self):
+        #Normal test case
         self.assertEqual(question1.calcVolume(4), 64)
+
+        #Negative number test case
         self.assertEqual(question1.calcVolume(-1), -1)
+
+        #Wrong input type
         self.assertEqual(question1.calcVolume("bad input"), -1)
-        # self.assertEqual(question1.calcVolume(-9, -5), -14)
-        # self.assertEqual(question1.calcVolume(1.2, -1.3), -0.10000000000000009)
+
 
 
 
